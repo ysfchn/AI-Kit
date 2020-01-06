@@ -99,6 +99,7 @@ def cleanaia():
     # Content of the project.properties file.
     prop = ""
 
+    # Reads .bky, .scm and project.properties files from project and saves into a variable.
     for fileName in zf.namelist():
         if fileName.endswith(".bky"):
             bky.append(zf.read(fileName).decode(sys.stdout.encoding))
@@ -109,7 +110,7 @@ def cleanaia():
 
     # Converts list to string for checking the references.
     filebky = "".join(bky)
-    filescm = "".join(bky)
+    filescm = "".join(scm)
 
     for fileName in zf.namelist():
         # Gets the name of the file by deleting the path piece.
