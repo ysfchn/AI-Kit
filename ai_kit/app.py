@@ -15,7 +15,7 @@ import ruamel.std.zipfile as zipfile
 from ruamel.std.zipfile import delete_from_zip_file
 
 
-def repairaia(aia_path='../devrim.aia'):
+def repairaia(aia_path='../sample.aia'):
     """
     Repair .aia.
 
@@ -55,7 +55,7 @@ def repairaia(aia_path='../devrim.aia'):
     return True
 
 
-def cleanaia(aia_path='../devrim.aia'):
+def cleanaia(aia_path='../sample.aia'):
     """
     Clean-up the .aia.
 

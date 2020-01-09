@@ -61,4 +61,4 @@ jobs:
     - name: Test cmd
       run: |
         cd ai_kit/
-        python app.py -f "../devrim.aia" -r -c
+        python app.py -f "../sample.aia" -r -c
